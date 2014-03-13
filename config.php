@@ -1,5 +1,10 @@
 <?php 
 
+$config = array(
+  'site_title' => 'Powertech Energy Savers',
+  'theme' => 'powertech',
+);
+
 /*
 // Override any of the default settings below:
 
