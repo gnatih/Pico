@@ -3,6 +3,9 @@
 $config = array(
   'site_title' => 'Powertech Energy Savers',
   'theme' => 'powertech',
+  'exclude' => array(
+    'files' => array(),
+  ),
 );
 
 /*
