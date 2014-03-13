@@ -1,0 +1,37 @@
+@font-face {
+font-family: 'Vegur Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Vegur Regular'), url('Vegur-R 0.602.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Vegur Medium';
+font-style: normal;
+font-weight: normal;
+src: local('Vegur Medium'), url('Vegur-M 0602.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Vegur Light';
+font-style: normal;
+font-weight: normal;
+src: local('Vegur Light'), url('Vegur-L 0602.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Vegur Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Vegur Bold'), url('Vegur-B 0.602.woff') format('woff');
+}
+
+body {
+  font-family: 'Vegur Light', sans-serif;
+
+}
+
+.inner {
+  width: 1024px;
+  margin: 0 auto;
+}
