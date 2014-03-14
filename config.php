@@ -3,9 +3,16 @@
 $config = array(
   'site_title' => 'Powertech Energy Savers',
   'theme' => 'powertech',
+  'hide_pages' => '',
   'exclude' => array(
     'files' => array(),
   ),
+  'custom_meta_values' => array(
+    'type' => 'Type',
+    'hide' => 'Hide',
+    'color' => 'Color'
+  ),
+  'aswyg_password' => '$1$7HK4bobq$LOMmnvZ8F7Xe3sAwlLfnx0',
 );
 
 /*

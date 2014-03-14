@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+group :development do
+  gem 'sass'
+  gem 'compass'
+  gem 'compass-normalize'
+  gem 'susy'
+  gem 'guard'
+  gem 'guard-compass'
+  gem 'guard-livereload'
+end

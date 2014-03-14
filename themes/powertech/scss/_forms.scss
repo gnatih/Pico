@@ -1,0 +1,7 @@
+input[type='submit']{
+
+}
+
+input[type='text'], input[type='email']{
+  @include border-radius(4px);
+}

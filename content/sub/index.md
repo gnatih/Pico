@@ -1,5 +1,6 @@
 /*
 Title: Sub Page Index
+Color: blue
 */
 
 ## This is a Sub Page Index

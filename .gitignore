@@ -21,3 +21,7 @@ Thumbs.db
 
 # User config
 #config.php
+
+.sass-cache
+.bundle
+Gemfile.lock

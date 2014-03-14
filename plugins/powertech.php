@@ -150,8 +150,8 @@ class Powertech {
 
   private function build_navigation($navigation = array(), $start = false)
   {
-    $id = $start ? '' : '';
-    $class = $start ? 'menu' : '';
+    $id = $start ? 'menu' : '';
+    $class = '';
     $class_li = 'leaf';
     $class_a = 'link';
     $child = '';

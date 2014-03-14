@@ -1,5 +1,6 @@
 /*
 Title: Sub Page
+Hide: true
 */
 
 ## This is a Sub Page
