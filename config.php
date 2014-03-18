@@ -11,7 +11,8 @@ $config = array(
     'type' => 'Type',
     'hide' => 'Hide',
     'color' => 'Color',
-    'message' => 'Message'
+    'message' => 'Message',
+    'featured' => 'Featured'
   ),
   'pages_order_by' => 'alpha',
   'pages_order' => 'asc',

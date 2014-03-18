@@ -24,6 +24,19 @@
   <div class="body">
     <div class="inner">
 
+      {% if is_front_page %}
+        {% for page in pages %}
+
+          {% if page.featured %}
+          
+            <div class="one-third featured">
+              <h2 class="{{ page.color }}">{{ page.title }}</h2>
+              {{ page.description }}
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% else %}
+
       {% if images %}
       <div class="mast">
         <img src="{{ images|first.url}}" alt="">
@@ -42,6 +55,8 @@
         <h2>{{ meta.title }}</h2>
         {{ content }}
       </div>
+
+      {% endif %}
     </div>
   </div>
 
