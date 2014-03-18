@@ -13,7 +13,8 @@ $config = array(
     'color' => 'Color',
     'message' => 'Message'
   ),
-  'aswyg_password' => '$1$7HK4bobq$LOMmnvZ8F7Xe3sAwlLfnx0',
+  'pages_order_by' => 'alpha',
+  'pages_order' => 'asc',
   // 'image_path' => 'images/',
 );
 
