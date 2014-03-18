@@ -10,9 +10,11 @@ $config = array(
   'custom_meta_values' => array(
     'type' => 'Type',
     'hide' => 'Hide',
-    'color' => 'Color'
+    'color' => 'Color',
+    'message' => 'Message'
   ),
   'aswyg_password' => '$1$7HK4bobq$LOMmnvZ8F7Xe3sAwlLfnx0',
+  // 'image_path' => 'images/',
 );
 
 /*

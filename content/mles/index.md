@@ -1,5 +1,5 @@
 /*
-Title: Multi Load Energy Saver
-Description: This description will go in the meta description tag
-Color: orange
+Title: Multi Load Energy Savers
+Description: Some description here..
+Message: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, nulla?
 */

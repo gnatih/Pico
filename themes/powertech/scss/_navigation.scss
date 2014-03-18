@@ -1,6 +1,7 @@
 .navigation {
-  margin-bottom: 32px;
+  margin-bottom: 18px;
   .inner {
+    @include border-radius(5px);
     background: $gray;  
   }
 }
@@ -9,14 +10,13 @@
   padding:0;
   margin:0;
   list-style-type:none;
-  height:24px;
 }
 
 .navigation .inner > ul li { float:left; }
 
 .navigation .inner > ul li a {
   @include box-sizing(border-box);
-  padding:6px 12px;
+  padding:3px 12px;
   display:block;
   color:#fff;
   text-decoration:none;
@@ -36,7 +36,7 @@
 
 .navigation .inner > ul li:hover ul {
   left:0px;
-  top:36px;
+  top:30px;
   padding:0;
   margin: 0;
   background: inherit;

@@ -5,20 +5,20 @@
 
 @include establish-baseline;
 
-body { font-family: 'Droid Sans', sans-serif; color: $gray; }
+body { font-family: "Vegur Light", "Times New Roman", sans-serif; color: $gray; }
 
-.header {
-  height: $header-height;
-  
+header {
+
   .inner {
+    height: $header-height;
     position: relative;
   }
 }
 
 .logo {
   position: absolute;
-  top: -10px;
-  left: -49px;
+  top: -12px;
+  left: -64px;
 }
 
 .body { @include adjust-font-size-to(16px); }
@@ -51,7 +51,7 @@ body { font-family: 'Droid Sans', sans-serif; color: $gray; }
   }
 }
 
-.footer {
+footer {
   .inner {
     border-top: 1px solid $gray;
     margin-top: 32px;
@@ -147,5 +147,31 @@ ul.list {
     display: block;
     color: lighten($gray, 10%);
     @include adjust-font-size-to(14px);
+  }
+}
+
+.mast {
+  @include box-sizing(border-box);
+  text-shadow: 0 0 15px #000;
+  color: #fff;
+  max-height: 240px;
+  overflow:hidden;
+  position: relative;
+  line-height: 0;
+
+  img { width: 100%; height: auto; line-height: 0;}
+
+  .overlay {
+    @include box-sizing(border-box);
+    @include stretch-y;
+    padding: 0 24px;
+    line-height: 24px;
+    @extend .one-third;
+    @include background(linear-gradient(top, rgba(0,0,0,.8), transparent));
+    z-index:2;
+
+    h2 {
+      @include adjust-font-size-to(20px);
+    }
   }
 }

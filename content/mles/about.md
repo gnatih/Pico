@@ -1,8 +1,0 @@
-/*
-Title: Second page
-Description: This description will go in the meta description tag
-*/
-
-
-
-Lorem ipsum dolor sit amet

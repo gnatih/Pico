@@ -4,18 +4,14 @@
   <title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
   {% if meta.description %}
     <meta name="description" content="{{ meta.description }}"> 
-  {% endif %}{% if meta.robots %}
-    <meta name="robots" content="{{ meta.robots }}">
   {% endif %}
-  <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="/js/script.js"></script>
+  <script src="{{ theme_url }}/js/script.js"></script>
 </head>
 <body>
-  <header id="header">
-    <div class="inner clearfix">
-      <h1><a href="{{ base_url }}">{{ site_title }}</a></h1>
+  <header>
+    <div class="inner">
+      <a href="{{ base_url }}" class="logo"><img src="{{ base_url }}/images/logo.jpg" alt=""></a>
     </div>
   </header>
 
@@ -28,23 +24,31 @@
   <div class="body">
     <div class="inner">
 
+      {% if images %}
+      <div class="mast">
+        <img src="{{ images|first.url}}" alt="">
+        <div class="overlay"><h2>{{ parent.title }}</h2>{{ parent.message }}</div>
+      </div>
+      {% endif %}
+
       {% if secondary_menu %}
       {% embed "blocks.html" %}
-        {% block title %} {{ parent.title }} {% endblock %}
+        {% block title %}  {% endblock %}
         {% block secondary %} {{ secondary_menu }} {% endblock %}
       {% endembed %}
       {% endif %}
-
+      
       <div class="{% if secondary_menu %} two-third omega {% endif %}">
-        {{ content }}  
+        <h2>{{ meta.title }}</h2>
+        {{ content }}
       </div>
     </div>
   </div>
 
-  <div class="footer">
+  <footer>
     <div class="inner">
       Copyright &copy; 2014 | Powertech Energy Savers
     </div>
-  </div>
+  </footer>
 </body>
 </html>
