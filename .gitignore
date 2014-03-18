@@ -25,3 +25,5 @@ Thumbs.db
 .sass-cache
 .bundle
 Gemfile.lock
+
+.git-ftp-ignore
