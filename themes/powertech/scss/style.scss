@@ -93,6 +93,11 @@ footer {
   }
 }
 
+.one-fourth {
+  @include span-columns($total-columns/4);
+  &.omega { @include span-columns($total-columns/4 omega); }
+}
+
 .title { padding-left: 12px; margin-bottom: rhythm(.5); }
 
 
@@ -102,22 +107,24 @@ h2 {
 }
 
 .featured {
-  h2 {
+  @include box-sizing(border-box);
+  padding: 16px;
+  h3 {
     font-weight: normal;
-    padding-top: 4px;
+    margin: 0;
   }
 }
 
 .orange { background-color: $orange; color:#fff; }
 .green { background-color: $green; color:#fff; }
 .blue { background-color: $blue; color:#fff; }
+.dark-gray { background-color: $dark-gray; color:#fff; }
 
 ul.list {
   margin: 0;
   padding: 0 16px;
   li { list-style: circle outside; }
 }
-
 
 .table {
   tr {

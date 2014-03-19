@@ -25,15 +25,11 @@
     <div class="inner">
 
       {% if is_front_page %}
-        {% for page in pages %}
-
-          {% if page.featured %}
-          
-            <div class="one-third featured">
-              <h2 class="{{ page.color }}">{{ page.title }}</h2>
-              {{ page.description }}
-            </div>
-          {% endif %}
+        {% for page in pages if page.featured %}
+          <div class="one-fourth featured {{ page.color }} {% if loop.index==4 %}omega{% endif %}">
+            <h3>{{ page.title }}</h3>
+            {{ page.description }}
+          </div>
         {% endfor %}
       {% else %}
 
