@@ -46,10 +46,11 @@
 .navigation .inner > ul li:hover ul li a {
   @include adjust-font-size-to(15px);
   width:248px;
+  border-bottom: 1px solid #999; 
 }
 
 .navigation .inner > ul li ul li:hover {
   background: darken($gray, 20%);
 }
 
-.navigation li.is-current a { background: darken($gray, 40%); }
+// .navigation li.is-current a { background: lighten($gray, 40%); color: #000 !important; }
