@@ -112,6 +112,24 @@ h2 {
   h3 {
     font-weight: normal;
     margin: 0;
+    text-shadow: 1px 1px 2px #333;
+  }
+
+  .readmore {
+    display: block;
+    @include border-radius(6px);
+    width: 90%;
+    background: #fff;
+    text-align: center;
+    padding: 4px 8px;
+    margin: 0 auto;
+    margin-top: rhythm(.5);
+    color: #000; 
+    text-decoration: none;
+
+    &:hover {
+      background: darken(#fff, 10%);
+    }
   }
 }
 

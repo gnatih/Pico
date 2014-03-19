@@ -3,10 +3,7 @@
 $config = array(
   'site_title' => 'Powertech Energy Savers',
   'theme' => 'powertech',
-  'hide_pages' => '',
-  'exclude' => array(
-    'files' => array(),
-  ),
+  'hide_pages' => 'contact',
   'custom_meta_values' => array(
     'type' => 'Type',
     'hide' => 'Hide',

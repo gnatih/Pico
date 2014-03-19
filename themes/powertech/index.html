@@ -28,7 +28,8 @@
         {% for page in pages if page.featured %}
           <div class="one-fourth featured {{ page.color }} {% if loop.index==4 %}omega{% endif %}">
             <h3>{{ page.title }}</h3>
-            {{ page.description }}
+            <p>{{ page.description }}</p>
+            <a href="{{ page.url }}" class="readmore">Read more..</a>
           </div>
         {% endfor %}
       {% else %}

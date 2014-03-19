@@ -145,15 +145,7 @@ class Powertech {
 		foreach($parts as $id => $part) {
 			$value = array();
 			if(!$part || $id == $count-1) {
-
-				$value = array(
-					'url'=>$page['url'],
-					'path'=>$page['path'],
-					'title'=>$page['title'],
-					'color'=>$page['color'],
-					'message' => $page['message'],
-					'hide'=>$page['hide']
-				);
+				$value = $page;
 			}
 			if(!$part) {
 				$parent = $value;
