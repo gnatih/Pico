@@ -1,5 +1,7 @@
 /**
 Title: GSM based Remote Monitoring System
+Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, vel.
+Placing: 3
 **/
 
 ###Features

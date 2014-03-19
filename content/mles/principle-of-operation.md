@@ -1,6 +1,7 @@
 /*
 Title: Principle of Operation
-Description: 
+Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, necessitatibus.
+Placing: 1
 */
 
 From the fundamental theory of transformers, it will be recalled that the voltage induced in a winding usually far exceeds the resistance drop in that winding. In other words, winding open-circuit reactance usually is much greater than winding d-c resistance. Further, it will be recalled that a relatively small amount of direct current flowing into the winding of a transformer, in the core of which there is no air gap, causes the core to saturate. Thus, the reactance of the transformer may be varied by a small amount of d-c power. Now, if one winding of a transformer is connected between an a-c supply and a load, the amount of power delivered to the load may be controlled by a small amount of d-c power flowing in another winding. Because of the fact that open-circuit reactance ordinarily exceeds d-c resistance, the possibility of power amplification is inherent in a transformer.
