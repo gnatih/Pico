@@ -23,11 +23,20 @@ class Powertech {
 		$this->path = $this->format($url);
 	}
 
+	public function before_read_file_meta(&$headers) {
+		$headers['placing'] = 'Placing';
+	}
+
+	public function get_page_data(&$data, $page_meta) {
+		$data['placing'] = isset($page_meta['placing']) ? intval($page_meta['placing']) : 0;
+	}
+
 	public function config_loaded(&$settings)
 	{
 		$this->root = (!empty($settings["images_path"])) ? $this->format($settings["images_path"]) : 'content/';
 		$this->base_url = $settings['base_url'];
 		$this->hide_list = array_map('trim', explode(',', $settings['hide_pages']));
+		$this->placing = ($settings["pages_order_by"] == "placing") ? true : false;
 	}
 
 	public function before_render(&$twig_vars, &$twig)
@@ -55,6 +64,21 @@ class Powertech {
 
 		$this->pages = array();
 		$this->current_url = $current_page['url'];
+
+
+		if($this->placing){
+			$sorted_pages = array();
+
+			$placing_id = 0;
+			foreach ($pages as $page) {
+				$sorted_pages[$page['placing'] . $placing_id] = $page;
+				$placing_id++;
+			}
+
+			ksort($sorted_pages);
+			$pages = $sorted_pages;
+		}
+
 		$this->construct_pages($pages);
 	}
 
