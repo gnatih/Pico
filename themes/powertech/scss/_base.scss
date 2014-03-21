@@ -4,10 +4,13 @@
 @import 'blueprint/form';
 @import 'normalize';
 
+
+$total-columns: 12;
+$column-width: 4.5em;
 $blue: #02b6df;
 $green: #97cc46;
 $orange: #f4a403;
 $gray: #666;
 $dark-gray: #333;
 
-$header-height: 100px;
+$header-height: 90px;

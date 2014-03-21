@@ -27,7 +27,7 @@ Placing: 2
 - Increases Load side efficiency
 - P.F. improvement due to circuit efficiency improvement
 - Elimination of voltage imbalance in case of 3 phase motors by virtue of our phase angle balancing method.
-- Reduced heat losses in case of motors & compressors
+- Reduced heat losses in case of motors &amp; compressors
 - Reduced cable burden
 - Reduction in distribution losses
 - No reduction in voltage

@@ -8,10 +8,10 @@ From the fundamental theory of transformers, it will be recalled that the voltag
 
 Also by using rectangular shaped B-H curve with cores equivalent to amorphous grade self losses can be minimized, so that when load is absent self losses are minimum.
 
-![Typical Magnetization curve for core gain orientation](/content/mles/01.png)
+![Typical Magnetization curve for core gain orientation](/content/3-mles/01.png)
 <div class="caption">Typical construction of a closed-loop flux-induced power & control coil</div>
 
-![Typical Magnetization curve for core gain orientation](/content/mles/02.png)
+![Typical Magnetization curve for core gain orientation](/content/3-mles/02.png)
 <div class="caption">Typical Magnetization curve for core gain orientation</div>
 
 In grain-oriented steel cores there is an approximately linear relationship between d-c ampere-turns per inch and a-c ampere-turns per inch over a large range of flux density. Moreover, the a-c NI/in. for a given d-c NI/in. change but little with a-c flux density over this range. In Fig. above each of the lines for a given value of control magnetizing force is nearly vertical. For a given value of control NI/in., load current is almost independent of flux density and therefore of a-c supply voltage. The sections following are based on the use of grain-oriented core steel.

@@ -2,7 +2,7 @@
   margin-bottom: 18px;
   .inner {
     @include border-radius(5px);
-    background: $gray;  
+    background: #999;  
   }
 }
 

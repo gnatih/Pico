@@ -17,8 +17,11 @@ header {
 
 .logo {
   position: absolute;
-  top: -12px;
-  left: -64px;
+  top: -8px;
+  left: -44px;
+  width: 280px;
+
+  img { width: 100%; height: auto; }
 }
 
 .body { @include adjust-font-size-to(16px); }
@@ -144,16 +147,16 @@ ul.list {
   li { list-style: circle outside; }
 }
 
-.table {
+.table, table {
   tr {
     border-bottom: 1px solid #999;
+    &:hover { background: #edefed; }
   }
 
-  td, th { vertical-align: middle; text-align: center; }
+  td, th { vertical-align: middle; padding: 4px 8px;}
   th {
     font-weight: bold;
     background: #efefef;
-    text-align: center;
   }
 }
 
@@ -174,6 +177,8 @@ ul.list {
     @include adjust-font-size-to(14px);
   }
 }
+
+img { width: 100%; height: auto; line-height: 0;}
 
 .mast {
   @include box-sizing(border-box);
