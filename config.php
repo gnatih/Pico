@@ -12,6 +12,6 @@ $config = array(
     'featured' => 'Featured',
     'placing' => 'Placing',
   ),
-  // 'pages_order_by' => 'placing',
+  'pages_order_by' => 'alpha',
   'pages_order' => 'asc',
 );
