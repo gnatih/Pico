@@ -17,6 +17,7 @@ class Powertech {
 	private $current_url;
 	private $base_url;
 	private $hide_list;
+	private $sub_menu;
 
 	public function request_url(&$url)
 	{
@@ -43,8 +44,7 @@ class Powertech {
 	{
 		$twig_vars['images'] = $this->images_list($twig_vars['base_url']);
 		foreach($this->pages["_childs"] as $page){
-			if($this->is_hidden($page['path'])) continue;
-
+			
 			if(isset($page["_childs"]) && ($this->current_url == $page["url"] || strpos($this->current_url, $page['url']) === 0)){
 				$twig_vars["secondary_menu"] = $this->output($page);
 				$twig_vars["parent"] = $page;
@@ -53,6 +53,11 @@ class Powertech {
 			}
 		}
 		$twig_vars['primary_menu'] = $this->output($this->pages);
+
+		$twig_vars['submenu'] = '<a href="'.$this->base_url.'">Home</a>';
+		foreach($this->sub_menu as $page){
+			$twig_vars['submenu'].= '<a href="'.$page['url'].'">'.$page['title'].'</a>';
+		}
 	}
 
 	public function get_pages(&$pages, &$current_page, &$prev_page, &$next_page)
@@ -131,6 +136,11 @@ class Powertech {
 		foreach ($pages as $page)
 		{
 			$page['path'] = rtrim(str_replace($this->base_url.'/','',$page['url']), '/');
+			if($this->is_hidden($page['path'])) {
+				$this->sub_menu[] = $page;
+				continue;
+			}
+
 			$nested_path = $this->nested_path($page);
 			$this->pages = array_merge_recursive($this->pages, $nested_path);
 		}
