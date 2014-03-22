@@ -127,6 +127,7 @@ class Powertech {
 
 	private function construct_pages($pages)
 	{
+		array_multisort($this->pages_urls, SORT_ASC, $pages);
 		foreach ($pages as $page)
 		{
 			$page['path'] = rtrim(str_replace($this->base_url.'/','',$page['url']), '/');
