@@ -4,7 +4,25 @@
     @include border-radius(5px);
     background: #999;  
   }
+
+  .orange{
+    background: none;
+    border-bottom: 4px solid $orange;
+  }
+  .green{
+    background: none;
+    border-bottom: 4px solid $green;
+  }
+  .blue{
+    background: none;
+    border-bottom: 4px solid $blue
+  }
+  .dark-gray{
+    background: none;
+    border-bottom: 4px solid $dark-gray;
+  }
 }
+
 
 .navigation .inner > ul {
   padding:0;
@@ -41,6 +59,10 @@
   margin: 0;
   background: inherit;
   z-index: 99;
+
+  & ul {
+    display: none;
+  }
 }
 
 .navigation .inner > ul li:hover ul li a {
@@ -53,4 +75,4 @@
   background: darken($gray, 20%);
 }
 
-// .navigation li.is-current a { background: lighten($gray, 40%); color: #000 !important; }
+.navigation li.is-current a { background: darken($gray, 10%); color: #fff !important; }

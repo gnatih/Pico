@@ -41,6 +41,10 @@ header {
     &:hover, &.is-current {
       background: lighten($gray, 50%);
     }
+
+    ul {
+      margin-left: 24px;
+    }
   }
   li a {
     display:block;

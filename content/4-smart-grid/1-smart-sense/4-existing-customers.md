@@ -2,7 +2,7 @@
 Title: Existing Customers
 **/
 
-Helping more than 100 customers with their remote monitoring/ controlling solutions for all sectors  – Auto, Engineering, Pharma, Textiles, Iron & steel, Chemicals, Power etc.
+Helping more than 100 customers with their remote monitoring/ controlling solutions for all sectors - Auto, Engineering, Pharma, Textiles, Iron & steel, Chemicals, Power etc.
 
 Below is the list of few of our clients: 
 
