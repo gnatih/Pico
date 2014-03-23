@@ -221,3 +221,59 @@ img { width: 100%; height: auto; line-height: 0;}
     margin-left: 12px;
   }
 }
+
+.bm {
+
+  $bz: 35px;
+  tr { border: none; &:hover { background: transparent; } }
+  td { padding-left: 42px; vertical-align: top; }
+
+  tr:first-child td {
+    vertical-align: middle;
+    color: white;
+    text-decoration: none; 
+    padding: 10px 0 10px 65px;
+    position: relative; 
+
+    &:after {
+      content: " "; 
+      display: block; 
+      width: 0; 
+      height: 0;
+      border-top: $bz solid transparent;           /* Go big on the size, and let overflow hide */
+      border-bottom: $bz solid transparent;
+      border-left-width: $bz;
+      border-left-style: solid;
+      position: absolute;
+      top: 50%;
+      margin-top: -$bz; 
+      left: 100%;
+      z-index: 2; 
+    }
+  }
+
+  .audit{
+    width: 25%;
+    background: $gray;
+
+    &:after {
+      border-left-color: $gray;
+    }
+  }
+
+  .waste{
+    background: $orange;
+
+    &:after {
+      border-left-color: $orange;
+    }
+  }
+
+  .powertech{
+    background: $green;
+
+    &:after {
+      border-left-color: $green;
+    }
+  }
+}
