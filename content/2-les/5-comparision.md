@@ -1,9 +1,9 @@
 /**
-Title: Comparision
+Title: Comparison
 Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, harum!
 **/
 
-###Comparision A
+### Comparison A
 | Parameter | Conventional | Thyristor based | Power Tech magnetic Amplifier |
 |:-|:-|:-|:-|
 | Capacity | User specified | 3.3 kVA and 6.6 kVA | Upto 450 kVA |
@@ -30,7 +30,7 @@ Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, ha
 | Over current strength | Yes | No | Yes (10 times for 1 second) |
 | Harmonic | No | Yes | No |
 
-###Comparision B
+### Comparison B
 Comparison between voltage stabilizer and Power Tech Magnetic Amplifier
 
 | Parameter | Voltage stabilizer | Power Tech Magnetic Amplifier |
@@ -52,7 +52,7 @@ Comparison between voltage stabilizer and Power Tech Magnetic Amplifier
 | Frequency sync | N.A. | Standard |
 | Purpose | General | Exclusive |
 | Control | Carbon brush | Flux induction |
-| Air cooling capacity | Upto 60 kVA 3 ph | 10-450 kVA 3 ph |
+| Air cooling capacity | Up to 60 kVA 3 ph | 10-450 kVA 3 ph |
 | Load regulation | 3% | 0.50% |
 | Active feedback | No | Standard |
 | Time zones | N.A. | 7 |

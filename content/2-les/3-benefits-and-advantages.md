@@ -1,5 +1,5 @@
 /*
-Title: Benefits &amp; Advantages
+Title: Benefits and Advantages
 Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, necessitatibus.
 */
 
