@@ -50,7 +50,13 @@
   margin: 0;
 }
 
-.navigation .inner > ul li:hover { position:relative; background:darken($gray, 10%); }
+.navigation .inner > ul li:hover { 
+  position:relative; 
+  background:darken($gray, 5%); 
+  & > a {
+    @include background(darken($gray, 10%) linear-gradient(top, rgba(white, .3), rgba(white, 0) 50%, rgba(black, .12) 51%, rgba(black, .04)));
+  }
+}
 
 .navigation .inner > ul li:hover ul {
   left:0px;
