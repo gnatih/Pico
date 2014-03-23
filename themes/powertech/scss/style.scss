@@ -6,7 +6,7 @@
 @include establish-baseline;
 
 body { font-family: "Vegur Light", "Times New Roman", sans-serif; color: $gray; }
-
+a { color: $orange; text-decoration: none; }
 header {
 
   .inner {
@@ -219,6 +219,14 @@ img { width: 100%; height: auto; line-height: 0;}
     @include adjust-font-size-to(14px);
     text-decoration: none;
     margin-left: 12px;
+    color: #333;
+    padding: 4px 8px;
+
+    &:hover, &.active {
+      background:#999;
+      color:#fff;
+      @include border-radius(4px);
+    }
   }
 }
 

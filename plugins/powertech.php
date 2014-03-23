@@ -55,8 +55,11 @@ class Powertech {
 		$twig_vars['primary_menu'] = $this->output($this->pages);
 
 		$twig_vars['submenu'] = '<a href="'.$this->base_url.'">Home</a>';
+
 		foreach($this->sub_menu as $page){
-			$twig_vars['submenu'].= '<a href="'.$page['url'].'">'.$page['title'].'</a>';
+			$class = $this->current_url == $page['url'] ? 'active' : "";
+
+			$twig_vars['submenu'].= '<a href="'.$page['url'].'" class="'.$class.'">'.$page['title'].'</a>';
 		}
 	}
 
