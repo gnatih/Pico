@@ -38,17 +38,22 @@ header {
   ul, li { margin: 0;padding: 0; list-style:none;}
   li { 
     line-height: 32px; border-bottom: 1px solid lighten($gray, 30%); 
-    &:hover, &.is-current {
+    &.is-current > a, &.is-parent > a{
       background: lighten($gray, 50%);
     }
 
     ul {
       margin-left: 24px;
+      display: none;
+
+      li:last-child {
+        border-bottom: none;
+      }
     }
   }
+
   li a {
     display:block;
-    width: 100%;
     padding: 8px;
     @include adjust-font-size-to(16px);
     text-decoration: none;
