@@ -14,4 +14,5 @@ $config = array(
   ),
   'pages_order_by' => 'alpha',
   'pages_order' => 'asc',
+  'excerpt_length' => 32
 );

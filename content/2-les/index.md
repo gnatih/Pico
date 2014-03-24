@@ -1,8 +1,9 @@
 /**
 Title: Lighting Energy Saver
-Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, aliquid!
+Description: Power Tech CLES saves upto 40% lighting energy in a centralized manner continuously for 12-15 years without any maintenance cost, system comes with short ROI/payback and 80% I.T depreciation moreover CLES is equipped with cloud based remote energy monitoring and remote on/off facility with sky view of lighting feeder, the system is designed to save maximum lighting energy. With over 5000+ installations at large industries, airports, railways, malls, municipal corporations in India & overseas the system is widely used and well.
+Message: Power Tech CLES saves upto 40% lighting energy in a centralized manner continuously for 12-15 years without any maintenance cost.
 Featured: true
 Color: orange
 **/
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, a porro illo aperiam nobis laborum itaque doloribus quidem unde placeat alias dignissimos qui tempore magni officia voluptates blanditiis ea labore ex tempora soluta nulla praesentium ducimus vero inventore eaque quaerat sequi. Qui, tempore reiciendis nesciunt. Quaerat, aperiam, eos, doloribus omnis sed quo accusamus accusantium architecto quidem vel velit commodi! Tempore quas sapiente commodi rem. Tempora, sint quos eaque voluptatem dolore delectus ut consectetur rem tempore et odio esse explicabo facilis sunt veniam eum totam iusto hic placeat numquam! Distinctio, rem ipsum reprehenderit itaque porro obcaecati explicabo possimus doloremque quos eius. Animi, dolorum, hic delectus autem beatae eius tempora sapiente perspiciatis totam eveniet laboriosam quae aut dolor molestiae magnam reiciendis blanditiis!
+Power Tech CLES saves upto 40% lighting energy in a centralized manner continuously for 12-15 years without any maintenance cost, system comes with short ROI/payback and 80% I.T depreciation moreover CLES is equipped with cloud based remote energy monitoring and remote on/off facility with sky view of lighting feeder, the system is designed to save maximum lighting energy. With over 5000+ installations at large industries, airports, railways, malls, municipal corporations in India & overseas the system is widely used and well
