@@ -7,7 +7,7 @@
   {% endif %}
 
   <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="{{ theme_url }}/js/script.js"></script>
 </head>
 <body>
@@ -15,7 +15,9 @@
   <header>
     <div class="inner">
       <a href="{{ base_url }}" class="logo"><img src="{{ base_url }}/images/logo.jpg" alt=""></a>
-      <div class="submenu">{{ submenu }}</div>
+      <div class="submenu" data-msg="0">{{ submenu }}</div>
+
+      <div class="slogan" data-msg="0"></div>
     </div>
   </header>
 
