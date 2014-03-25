@@ -1,4 +1,9 @@
 /**
 Title: Other products
-Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, deserunt.
 **/
+
+
+- Solar Roof Top Panels
+- Solar Pumps
+- Solar LED lights
+- Energy Efficient Transformers (HT)

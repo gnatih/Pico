@@ -2,6 +2,7 @@
 @import 'typography';
 @import 'navigation';
 @import 'forms';
+@import 'bxslider';
 
 @include establish-baseline;
 
@@ -17,11 +18,17 @@ header {
 
 .logo {
   position: absolute;
-  top: -8px;
+  top: 4px;
   left: -44px;
   width: 280px;
 
   img { width: 100%; height: auto; }
+}
+
+.slogan {
+  position: absolute;
+  left: 246px;
+  top: 61px;
 }
 
 .body { @include adjust-font-size-to(16px); }
@@ -118,9 +125,17 @@ h2 {
   @include adjust-font-size-to(24px);
 }
 
+.featured_wrapper {
+  clear:both;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
 .featured {
   @include box-sizing(border-box);
   padding: 16px;
+  text-align: justify;
+  @include border-radius(6px);
+
   h3 {
     font-weight: normal;
     margin: 0;
@@ -139,16 +154,49 @@ h2 {
     color: #000; 
     text-decoration: none;
 
-    &:hover {
-      background: darken(#fff, 10%);
-    }
+
   }
 }
 
-.orange { background-color: $orange; color:#fff; }
-.green { background-color: $green; color:#fff; }
-.blue { background-color: $blue; color:#fff; }
+.clients {
+  clear:both;
+  margin-top: 20px;
+  @include border-radius(6px);
+  h2 {
+    margin: 0;
+  }
+}
+
+.orange { 
+  color:#fff; 
+  @include background($orange linear-gradient(top left, rgba(white, .3), rgba(white, 0) 50%, rgba(black, .12) 51%, rgba(black, .04)));
+
+  & .readmore:hover {
+    color:$orange;
+  }
+}
+.green { 
+  background-color: $green; color:#fff; 
+  @include background($green linear-gradient(top left, rgba(white, .3), rgba(white, 0) 50%, rgba(black, .12) 51%, rgba(black, .04)));
+    & .readmore:hover {
+    color:$green;
+  }
+}
+.blue { 
+  color:#fff; 
+  @include background($blue linear-gradient(top left, rgba(white, .3), rgba(white, 0) 50%, rgba(black, .12) 51%, rgba(black, .04)));
+  & .readmore:hover {
+    color:$blue;
+  }
+}
 .dark-gray { background-color: $dark-gray; color:#fff; }
+.red { 
+  color:#fff; 
+  @include background($red linear-gradient(top left, rgba(white, .3), rgba(white, 0) 50%, rgba(black, .12) 51%, rgba(black, .04)));
+  & .readmore:hover {
+    color:$red;
+  }
+}
 
 ul.list {
   margin: 0;
@@ -291,8 +339,3 @@ img { width: 100%; height: auto; line-height: 0;}
   }
 }
 
-.slogan {
-  position: absolute;
-  left: 24px;
-  top: 78px;
-}

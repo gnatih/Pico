@@ -1,8 +1,10 @@
 .navigation {
   margin-bottom: 18px;
+
   .inner {
     @include border-radius(5px);
-    background: #999;  
+    // background: #999;  
+    @include background(darken($gray, 10%) linear-gradient(top, rgba(white, .3), rgba(white, 0) 50%, rgba(black, .12) 51%, rgba(black, .04)));
   }
 
   .orange{
@@ -20,6 +22,10 @@
   .dark-gray{
     background: none;
     border-bottom: 4px solid $dark-gray;
+  }
+  .red {
+    background: none;
+    border-bottom: 4px solid $red;
   }
 }
 

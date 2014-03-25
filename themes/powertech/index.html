@@ -7,8 +7,6 @@
   {% endif %}
 
   <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="{{ theme_url }}/js/script.js"></script>
 </head>
 <body>
 
@@ -29,8 +27,8 @@
 
   <div class="body">
     <div class="inner">
-
       {% if is_front_page %}
+        <div class="featured_wrapper">
         {% for page in pages if page.featured %}
           <div class="one-fourth featured {{ page.color }} {% if loop.index==4 %}omega{% endif %}">
             <h3>{{ page.title }}</h3>
@@ -38,26 +36,42 @@
             <a href="{{ page.url }}" class="readmore">Read more..</a>
           </div>
         {% endfor %}
+        </div>
+        <h2>Clients</h2>
+        <div class="clients">
+          <a class="slide" href="http://www.jaindairy.com" target="_blank"><img src="/images/clients/jaindairy.gif" alt=""><div class="caption">Jain Dairy</div></a>
+          <a class="slide" href="http://www.egovamc.com" target="_blank"><img src="/images/clients/amc.png" alt="">Ahmedabad Municipal Corporation</a>
+          <a class="slide" href="http://www.keclsolvents.com" target="_blank"><img src="/images/clients/kecl.png" alt=""><div class="caption">Kandla Energy and Chemicals Limited</div></a>
+          <a class="slide" href="http://www.arvind.com" target="_blank"><img src="/images/clients/arvind.jpg" alt=""><div class="caption">Arvind Limited</div></a>
+          <a class="slide" href="http://www.inductothermindia.com" target="_blank"><img src="/images/clients/inductotherm.jpg" alt=""><div class="caption">Inductotherm (India) Private Limited</div></a>
+          <a class="slide" href="http://www.gsecl.in" target="_blank"><img src="/images/clients/gscel.jpg" alt=""><div class="caption">Gujarat State Electricity Corporation Limited</div></a>
+          <a class="slide" href="http://geda.gujarat.gov.in" target="_blank"><img src="/images/clients/geda.png" alt=""><div class="caption">Gujarat Energy Development Agency</div></a>
+          <a class="slide" href="http://www.torrentpharma.com" target="_blank"><img src="/images/clients/torrent-power.jpg" alt=""><div class="caption">Torrent Power</div></a>
+          <a class="slide" href="http://www.torrentpower.com" target="_blank"><img src="/images/clients/torrent-pharma.jpg" alt=""><div class="caption">Torrent Pharmaceuticals</div></a>
+          <a class="slide" href="http://www.mahindra.com" target="_blank"><img src="/images/clients/mahindra.jpg" alt=""><div class="caption">Mahindra</div></a>
+          <a class="slide" href="http://www.gmdcltd.com/Default.aspx" target="_blank"><img src="/images/clients/gmdc.jpg" alt=""><div class="caption">Gujarat Mineral Development Corporation Ltd.</div></a>
+          <a class="slide" href="http://www.aai.aero" target="_blank"><img src="/images/clients/airport-authority.png" alt=""><div class="caption">Airports Authority of India</div></a>
+          <a class="slide" href="http://www.aai.aero" target="_blank"><img src="/images/clients/gsfc.gif" alt=""><div class="caption">Gujarat State Financial Corporation</div></a>
+        </div>
       {% else %}
+        {% if images %}
+        <div class="mast">
+          <img src="{{ images|first.url}}" alt="">
+          <div class="overlay"><h2>{{ parent.title }}</h2>{{ parent.message }}</div>
+        </div>
+        {% endif %}
 
-      {% if images %}
-      <div class="mast">
-        <img src="{{ images|first.url}}" alt="">
-        <div class="overlay"><h2>{{ parent.title }}</h2>{{ parent.message }}</div>
-      </div>
-      {% endif %}
-
-      {% if secondary_menu %}
-      {% embed "blocks.html" %}
-        {% block title %}  {% endblock %}
-        {% block secondary %} {{ secondary_menu }} {% endblock %}
-      {% endembed %}
-      {% endif %}
-      
-      <div class="{% if secondary_menu %} two-third omega {% endif %}">
-        <h2>{{ meta.title }}</h2>
-        {{ content }}
-      </div>
+        {% if secondary_menu %}
+        {% embed "blocks.html" %}
+          {% block title %}  {% endblock %}
+          {% block secondary %} {{ secondary_menu }} {% endblock %}
+        {% endembed %}
+        {% endif %}
+        
+        <div class="{% if secondary_menu %} two-third omega {% endif %}">
+          <h2>{{ meta.title }}</h2>
+          {{ content }}
+        </div>
 
       {% endif %}
     </div>
@@ -69,4 +83,8 @@
     </div>
   </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="{{ theme_url }}/js/lib.js"></script>
+<script src="{{ theme_url }}/js/script.js"></script>
+
 </html>
