@@ -99,4 +99,11 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.1.47/jquery.form-validator.min.js"></script>
+<script> $.validate({
+  modules : 'location',
+  onModulesLoaded : function() {
+    $('input[name="country"]').suggestCountry();
+  }
+}); </script>
 </html>
