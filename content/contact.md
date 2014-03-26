@@ -29,5 +29,6 @@ Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, in
   </p>
 
   <input class="button" type="submit" value="Submit">&nbsp;&nbsp;&nbsp;<input type="reset">
+  <input type="hidden" name="_next" value="//powertechindia.co.in/contact" />
 </form>
 
