@@ -3,7 +3,7 @@ Title: Contact
 Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, in.
 **/
 
-<form action="//forms.brace.io/jayesh.gohel@gmail.com" method="post">
+<form action="//forms.brace.io/vivek@powertechindia.co.in" method="post">
   <p>
     <input type="text" name="name" placeholder="Your name" data-validation="length" data-validation-length="min4">
   </p>
