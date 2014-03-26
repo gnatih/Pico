@@ -5,6 +5,7 @@ $config = array(
   'theme' => 'powertech',
   'hide_pages' => 'contact, 7-partner-us',
   'custom_meta_values' => array(
+    'slug' => 'Slug',
     'type' => 'Type',
     'hide' => 'Hide',
     'color' => 'Color',
@@ -14,5 +15,8 @@ $config = array(
   ),
   'pages_order_by' => 'alpha',
   'pages_order' => 'asc',
-  'excerpt_length' => 32
+  'excerpt_length' => 32,
+  'cache_enabled' => true,
+  'cache_dir' => 'cache',
+  'cache_time' => '604800'
 );

@@ -27,3 +27,5 @@ Thumbs.db
 Gemfile.lock
 
 .git-ftp-ignore
+
+cache/
